@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloDocker",
+            "request": "launch",
+            "mainClass": "basic_app_demo.init_project.HelloDocker",
+            "projectName": "Docker-Workshop_dcc4f307"
+        }
+    ]
+}
