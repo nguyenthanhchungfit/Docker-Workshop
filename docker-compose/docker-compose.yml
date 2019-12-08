@@ -1,0 +1,24 @@
+version: "3"
+services:
+  app-client:
+    build: ./AppClient
+    working_dir: /
+    image: app-client
+    container_name: app-client
+    networks:
+      - server-client-conn
+    depends_on:
+      - app-server
+ 
+  app-server:
+    build: ./AppServer
+    working_dir: /
+    image: app-server
+    container_name: app-server
+    ports:
+      - "9000:9000"
+    networks:
+      - server-client-conn 
+
+networks:
+    server-client-conn:
